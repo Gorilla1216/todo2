@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To_do</title>
+  </head>
+  <body>
+    <style>
+      .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      body {
+        background: #8c88b5;
+        background: linear-gradient(
+          90deg,
+          rgba(140, 136, 181, 1) 0%,
+          rgba(9, 9, 121, 1) 35%,
+          rgba(92, 125, 189, 1) 64%,
+          rgba(31, 117, 204, 1) 84%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .to_do {
+        margin-top: 50px;
+        width: 500px;
+        height: 400px;
+        background-color: rgb(202, 199, 220);
+        border-radius: 20px;
+      }
+      input {
+        margin-top: 30px;
+        margin-left: 70px;
+        width: 250px;
+        height: 40px;
+        border-radius: 20px;
+      }
+      button {
+        height: 40px;
+        font-weight: 600;
+        border-radius: 20px;
+        background-color: azure;
+
+      }
+    </style>
+
+    <div class="to_do">
+      <input placeholder="To do" type="text" id="taskInput" />
+
+      <button onclick="addTask()">Add task</button>
+
+      <ul id="taskList"></ul>
+    </div>
+  </body>
+  <script src="to_do.js"></script>
+</html>
